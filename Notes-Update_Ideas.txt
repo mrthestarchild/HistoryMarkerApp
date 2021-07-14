@@ -1,0 +1,5 @@
+1. If you are in "Walking Mode" (under 10mph) pop up the corresponding modal for the location, this could be a setting.
+2. Create a Explore and Passthrough mode.
+    - Explore: Shows history markers for the entire town and that are in city limits
+    - Passthrough: reads town history and history markers outside of the city limits.
+3. 

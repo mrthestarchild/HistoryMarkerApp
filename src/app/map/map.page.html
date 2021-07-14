@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <img class="logo-img" [src]="isDarkMode ? '../../assets/icon/logo_dark.png' : '../../assets/icon/logo_light.png'">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-google-map #googleMap apiKey="AIzaSyA2qc9JpLPszQyZMh13vRwp-NujJEcxaKI"></app-google-map>
+  <ion-fab>
+    <ion-fab-button [color]="isDarkMode ? 'secondary': 'tertiary'" class="float-button" (click)="CenterMap()">
+      <ion-icon name="locate-sharp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <!-- <ion-fab>
+    <ion-fab-button [color]="isDarkMode ? 'secondary': 'tertiary'" class="test-button" (click)="RotateIcon()">
+      <ion-icon name="sync-sharp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> -->
+</ion-content>

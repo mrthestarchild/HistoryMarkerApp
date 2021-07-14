@@ -1,0 +1,19 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>{{ locationInfo.Name }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+<ion-content fullscreen>
+  <div class="pad-ion-content" *ngIf="locationInfo.State || locationInfo.City">
+    <h4><span *ngIf="locationInfo.City">{{ locationInfo.City }}, </span>{{ locationInfo.State }}</h4>
+  </div>
+  <ion-img [src]="locationInfo.ImagePath"></ion-img>
+  <div class="pad-ion-content">
+    <p>{{ locationInfo.DisplayInformation }}</p>
+  </div>
+  
+</ion-content>

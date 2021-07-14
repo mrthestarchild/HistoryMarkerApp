@@ -1,5 +1,7 @@
 {
-  "name": "HistoryMarkerApp",
-  "integrations": {},
+  "name": "Landmark",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

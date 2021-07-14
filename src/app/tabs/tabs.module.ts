@@ -6,8 +6,12 @@ import { FormsModule } from '@angular/forms';
 import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
+import { GoogleMapComponent } from '../google-map/google-map.component';
 
 @NgModule({
+  exports:[
+    // GoogleMapComponent
+  ],
   imports: [
     IonicModule,
     CommonModule,
